@@ -1,0 +1,89 @@
+body {
+  background-color: #2d1a29;
+  color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  cursor: default;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+#background {
+  position: absolute;
+  padding: 0;
+  width: 100vw;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  filter: opacity(0.4);
+}
+
+/* Card */
+.card-body {
+  background-color: #332f32;
+}
+/* Navbar */
+.navbar {
+  background-color: #85c98d;
+  border: 2px #31a33e solid;
+  border-radius: 1rem;
+  padding: 0.7rem 1rem;
+  transition: 100ms ease-in-out;
+}
+.navbar:hover {
+  background-color: #9aeaa3;
+}
+/* .navbar:hover .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
+/* .nav-main {
+  padding: 0.7rem 4rem;
+} */
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  fill: rgba(255, 255, 255, 0.7);
+  font-size: 14pt;
+  transition: 200ms;
+  /* padding: 4px 0px 0px 0px; */
+}
+.nav-border {
+  margin: 0px 7px 0px 7px;
+  border: 0;
+}
+.nav-link img.icon {
+  filter: opacity(0.7);
+}
+.nav-link.active {
+  color: rgb(255, 255, 255);
+  /* border-bottom: 2px rgb(255, 255, 255) solid; */
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  /* border-radius: 1rem; */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+.nav-link.active .nav-border {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+img.icon {
+  filter: opacity(1);
+  transition: 200ms;
+}
+.nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+  fill: rgb(255, 255, 255);
+}
+#copyPlayURL {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+#play:hover {
+  cursor: pointer;
+}
+#play:hover #copyPlayURL {
+  color: rgb(255, 255, 255) !important;
+  fill: rgb(255, 255, 255);
+}
+#discord:hover #discordLogo {
+  filter: opacity(1);
+}
